@@ -27,7 +27,7 @@
     background-image: url("img/beyond.jpg");
   
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 600px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -86,6 +86,11 @@ figure {
     font-family: ABeeZee;
     size: 20;
 }
+.nametext:hover {
+    color: #FF6B61;
+    font-family: ABeeZee;
+    size: 20;
+}
 
 p {
     margin-top: 10px;
@@ -94,6 +99,25 @@ p {
     margin-bottom: 10px;
 }
 
+.skyblue {
+    color: #61A6FF;
+}
+.skyblue:hover {
+    color: #FF6B61;
+}
+
+/* Style buttons */
+.btn {
+    border: none;
+    color: #61A6FF;
+    cursor: pointer;
+
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    color: #FF6B61
+  }
 
 
 

@@ -15,11 +15,12 @@
     <link href="style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
     <title>audcui</title>
+    <link rel="icon" href="img/headicon.png" type="image/x-icon">
   </head>
   <body>
     
     <!-- navigation bar-->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top navbar-fixed-top">
     <a class="navbar-brand" href="#"><img src ="img/headicon.png" width="50" height="50" class="img-fluid" alt="Responsive image"> audcui</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,19 +29,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Art</a>
+            <a class="nav-link" href="#art">Art</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#blog">Blog</a>
         </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -51,39 +52,67 @@
     </nav>
 
     <!-- fixed bg-->
-    <div class="parallax"></div>
+    <section id="home">
+        <div class="parallax"></div>
+    </section>
+    
     
     <!-- about-->
-    <div class="container-fluid padding">
-        <div class="row welcome text-center">
-            <div class="col-12">
-                <br>
-                <h1 class="nametext">Hey I'm Audrey!</h1>
-                <br>
-                <p>I'm Audrey Cui, a freshman at MIT intending to study Course 6-9 (Computer Science & Cognitive Science). 
-                    As an aspiring researcher and avid artist, I'm interested in the ways computers can artistically augment and help us understand human creativity.
-                    In addition to fiddling with code and making art, I love petting my cat, playing social deduction games, and skateboarding!
-                </p>
-                <a href="mailto:audcui@mit.edu" target="mail">
-                    <i class="fa fa-lg fa-envelope-square"> 
-                       
-                    </i>
-                </a>
-                <a href="http://www.github.com/audreycui" target="gh">
-                    <i class="fab fa-lg fa-github-square"> 
-                    </i>
-                </a>
-                <a href="https://www.instagram.com/scribbleskibbles" target="ig">
-                    <i class="fab fa-lg fa-instagram-square"></i>
-                </a>
+    <section id="about">
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <br>
+                    <h1 class="nametext">Hey I'm Audrey!</h1>
+                    <br>
+                    <p>I'm Audrey Cui, a freshman at MIT intending to study Course 6-9 (Computer Science & Cognitive Science). 
+                        As an aspiring researcher and avid artist, I'm interested in the ways computers can artistically augment and help us understand human creativity.
+                        In addition to fiddling with code and making art, I love petting my cat, playing social deduction games, and skateboarding!
+                    </p>
+                    <br>
+                    <a href="mailto:audcui@mit.edu" target="mail" class="skyblue">
+                        <i class="fa fa-lg fa-envelope-square"> 
+                        
+                        </i>
+                    </a>
+                    <a href="http://www.github.com/audreycui" target="gh" class="skyblue">
+                        <i class="fab fa-lg fa-github-square"> 
+                        </i>
+                    </a>
+                    <a href="https://www.instagram.com/scribbleskibbles" target="ig" class="skyblue">
+                        <i class="fab fa-lg fa-instagram-square"></i>
+                    </a>
+                    </a>
+                    <a href="https://www.redbubble.com/people/oddtreesea/explore?asc=u&page=1&sortOrder=recent" target="rb" class="skyblue">
+                        <i class="fas fa-store"></i>
+                    </a>
+
+                    
+                    <!-- Auto width -->
+                    <button class="btn" onclick="window.location.href='https://docs.google.com/document/d/1WmX2G__dK1QdQpTmlB2jt8CippT0oh5WEH1ZjuZugLc/edit?usp=sharing';" type="button">
+                        <i class="far fa-file"></i> Resume </button>
+
+                </div>
                 
-                <p> resume </p>
-
             </div>
-            
         </div>
-    </div>
+    </section>
+    <hr>
+    <!--projects-->
+    <section id="projects">
 
+    </section>
+    <hr>
+    <!--art-->
+    <section id="art">
+
+    </section>
+    <hr>
+    <!--blog-->
+    <section id="blogs">
+
+    </section>
+    <hr>
     <!-- bootstrap JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
