@@ -115,10 +115,84 @@ p {
   }
   
   /* Darker background on mouse-over */
-  .btn:hover {
+.btn:hover {
     color: #FF6B61
-  }
+}
 
+.row {
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
+}
+
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+width: 100%;
+}
+
+.artcontainer {
+    position: relative;
+    width: 100%;
+    background-color: #61A6FF;
+  }
+  
+.artimage {
+opacity: 1;
+display: block;
+width: 100%;
+height: auto;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+.artmiddle {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.artcontainer:hover .artimage {
+opacity: 0.3;
+}
+
+.artcontainer:hover .artmiddle {
+opacity: 1;
+}
+
+.arttext {
+    font-family:AbeeZee; 
+    color:#FFFFFF;
+    font-size: 20px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.column2 {
+    flex: 50%;
+    max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column2 {
+    flex: 100%;
+    max-width: 100%;
+}
+}
 
 
 /*
