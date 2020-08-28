@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
-    <title>audcui</title>
+    <title>Audrey Cui</title>
     <link rel="icon" href="img/headicon.png" type="image/x-icon">
   </head>
   <body>
@@ -100,10 +100,37 @@
         <div class = "container-fluid padding">
             <div class = "row welcome text-center">
                 <div class='col-12'>
-                    <h2 class='nametext'> Projects </h2>
+                    <h2 class='nametext'> Project(s) </h2>
                 </div>
                 
             </div>
+            <div class="row">
+                <div class="col-4">
+                    <img style="width: 100%" src="img/gandiagram.jpg">
+                    <img style="width: 100%" src="img/results.JPG">
+                </div>
+                <div class="col-8 left">
+                    <h4 class='nametext2'>From Pixel to Paragraph: A Neural Artwork Analysis Paragraph Generator (2018-2020)</h4>
+                    <br>
+                    <p style="margin-left:5px; margin-right:89x;"> Inspired by the subjectivity of art in my local art museum, I developed a 
+                        model that generates paragraphs analyzing input pieces of artwork.
+                        I modified <a href='https://arxiv.org/pdf/1709.08624.pdf'>LeakGAN</a> (an unconditional GAN) to condition on input artwork features so that it can learn image-text relationships. 
+                        To make this more user friendly, I used Unity to develop an augmented reality interface (currently just a proof of concept). 
+                    </p>
+                    <br>
+                    <p style="margin-left:5px; margin-right:5px; margin-top:20px"> 
+                        Built with tensorflow, nltk, keras, BeautifulSoup, Unity, Microsoft Azure
+                    </p>
+                    <button class="btn" onclick="window.location.href='https://github.com/audreycui/pix2para'" type="button">
+                        <i class="fab fa-github"></i> GAN code </button>
+                    <button class="btn" onclick="window.location.href='https://github.com/audreycui/pix2paraUI'" type="button">
+                        <i class="fab fa-github"></i> AR code </button>
+                    <button class="btn" onclick="window.location.href='https://docs.google.com/document/d/1bqNEBfKFDHwLsjZOYz9HhBgpEG8CxAFmqSBja5ARbYY/edit?usp=sharing'" type="button">
+                        <i class="far fa-file"></i> paper </button>
+
+                </div>
+            </div>
+            
         </div>
     </section>
     <hr>
@@ -125,32 +152,87 @@
                             <div class="arttext">Mural (2020)</div>
                         </div>
                     </div>
-                    <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="mural">
-                        <div id="caption"></div>
-                      </div>
-                  
-                  <img src="img/sunsets/1.JPG">
-                  <img src="img/catlendar.jpg">
+                    <div class="artcontainer">
+                        <img src="img/sunsets/1.JPG" class="artimage" id="sunsets">
+                        <div class="artmiddle">
+                            <div class="arttext">sketchbook painting (2020)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/catlendar.jpg" class="artimage" id="catlendar">
+                        <div class="artmiddle">
+                            <div class="arttext">Catlendar (2019)</div>
+                        </div>
+                    </div>
                   
                 </div>
                 <div class="column">
-                    <img src="img/beyond.jpg">
-                    <img src="img/sfheart.jpg">
-                    <img src="img/shower.png">
+                    <div class="artcontainer">
+                        <img src="img/beyond.jpg" class="artimage" id="beyond">
+                        <div class="artmiddle">
+                            <div class="arttext">Beyond the Horizon (2018)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/sfheart.jpg" class="artimage" id="sfheart">
+                        <div class="artmiddle">
+                            <div class="arttext">Hearts in San Francisco (2019)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/shower.png" class="artimage" id="shower">
+                        <div class="artmiddle">
+                            <div class="arttext">Shower Triptych (2019)</div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="column">
-                    <img src="img/sunsets2/1.JPG">
-                    <img src="img/explorercat.JPG">
-                    <img src="img/goodevil.png">
+                    <div class="artcontainer">
+                        <img src="img/sunsets2/1.jpg" class="artimage" id="sunsets2">
+                        <div class="artmiddle">
+                            <div class="arttext">Small Sunset (2019)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/explorercat.JPG" class="artimage" id="explorer">
+                        <div class="artmiddle">
+                            <div class="arttext">The Explorer and Her Cat (2018)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/goodevil.png" class="artimage" id="hands">
+                        <div class="artmiddle">
+                            <div class="arttext">Nature with a Capital N (2018)</div>
+                        </div>
+                    </div>
                   </div>
                 <div class="column">
-                    <img src="img/chambers.png">
-                    <img src="img/bloodyhands.jpg">
-                    <img src="img/flight.png">
+                    <div class="artcontainer">
+                        <img src="img/chambers.png" class="artimage" id="chambers">
+                        <div class="artmiddle">
+                            <div class="arttext">Chambers (2019)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/bloodyhands.jpg" class="artimage" id="bloody">
+                        <div class="artmiddle">
+                            <div class="arttext">Thumbs Up (2019)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/flight.png" class="artimage" id="flight">
+                        <div class="artmiddle">
+                            <div class="arttext">Flight (2019)</div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modalImage" id="img01">
+                </div>
+            </div>
+            
         </div>
     </section>
     <hr>
@@ -162,12 +244,34 @@
                 <div class='col-12'>
                     <h2 class='nametext'> Blog </h2>
                     <p> Work in progress; check back later! :)</p>
+
                 </div>
                 
             </div>
         </div>
     </section>
     <hr>
+
+    <!--footer-->
+    <footer>
+        <p style="text-align:center"> copyright &copy; Audrey Cui 2020</p>
+    </footer>
+    <!-- modal image script-->
+    <script>
+        var modalEle = document.querySelector(".modal");
+        var modalImage = document.querySelector(".modalImage");
+        Array.from(document.querySelectorAll(".artimage")).forEach(item => {
+           item.addEventListener("click", event => {
+              modalEle.style.display = "block";
+              modalImage.src = event.target.src;
+            });
+        });
+        document.querySelector(".modal").addEventListener("click", () => {
+           modalEle.style.display = "none";
+        });
+
+
+    </script>
     <!-- bootstrap JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
