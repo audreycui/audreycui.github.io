@@ -230,6 +230,11 @@ opacity: 1;
     cursor: pointer;
  }
 
+ .imgrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
