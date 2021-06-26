@@ -394,10 +394,14 @@ Extra (xl) large devices (large desktops, 1200px and up)
   font-family: Quicksand; 
   font-weight: bolder; 
   font-size: 200%;
-  margin-top: 10%
 }
 .musings-text:hover {
   color:rgba(27, 20, 100, 1);
  
+}
+
+.musings-title{
+  margin-top: 10%
+
 }
 
