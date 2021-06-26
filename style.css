@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -10,6 +10,7 @@
 @media (max-width: 576px) {
   
 }
+
 
 /*---parallax--*/
 .parallax {
@@ -72,25 +73,38 @@ figure {
 }
 
 .nametext {
-    color: #61A6FF;
-    font-family: ABeeZee;
-    size: 20;
+    color: #ffffff;
+    font-family: Quicksand;
+    font-size: 600%;
 }
-.nametext:hover {
+/* .nametext:hover {
     color: #FF6B61;
-    font-family: ABeeZee;
+    font-family: Quicksand;
     size: 20;
-}
+} */
 
+.section-text{
+  color: rgba(27, 20, 100, 1); 
+  font-family: Quicksand;
+  font-size: 300%;
+}
 .nametext2 {
-    color: #FF6B61;
-    font-family: ABeeZee;
-    size: 20;
+    color: white;
+    font-family: Quicksand; 
+    font-weight: bolder; 
+    size: 100%;
 }
 .nametext2:hover {
-    color: #61A6FF;
-    font-family: ABeeZee;
-    size: 20;
+    color:rgba(27, 20, 100, 1);
+    font-family: Quicksand;
+    font-weight: bolder; 
+    size: 100%;
+}
+
+h2{
+  font-family: Quicksand; 
+   
+  font-size: 150%; 
 }
 
 p {
@@ -105,18 +119,19 @@ p {
 }
 
 .skyblue {
-    color: #61A6FF;
+    color:rgba(27, 20, 100, 1);
 }
 .skyblue:hover {
-    color: #FF6B61;
+    color: white ;
 }
 
 /* Style buttons */
 .btn {
     border: none;
-    color: #61A6FF;
+    color:rgba(27, 20, 100, 1);
     cursor: pointer;
-
+    font-family: Quicksand;
+    font-weight: bolder;
   }
   
   /* Darker background on mouse-over */
@@ -270,10 +285,119 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
 
+.transparent{
+  background: transparent;
+}
 
+.navbar-style{
+  font-family: Quicksand;
+  font-size: 200%
+}
 
+.sky-bg{
+  background : linear-gradient(0deg, rgba(251, 176, 59, 1) 0%, rgba(204, 255, 255, 1) 37.22%, rgba(198, 251, 253, 1) 41.63%, rgba(180, 238, 247, 1) 47.76%, rgba(150, 217, 237, 1) 54.9%, rgba(109, 189, 224, 1) 62.81%, rgba(56, 152, 207, 1) 71.24%, rgba(0, 113, 188, 1) 79.24%, rgba(16, 59, 137, 1) 90.84%, rgba(27, 20, 100, 1) 100%);
+}
 
+.purple-back{
+  margin-top: -10%; 
+  margin-left: 10%; 
+  width: 95%; 
+  height: auto; 
+}
+.purple-front{
+  position: absolute; 
+  top:30%;
+  width: 80%; 
+  height: auto; 
+  right: -10%
+}
 
+.clouds-home{
+  overflow: hidden; 
+  position:relative;
+  z-index: 1;
+  padding-bottom: 30%
+}
 
+.about-me{
+  position: absolute;  
+  margin-top: 10%;
+  text-align: center;
+  z-index: 2;
+  width: 100%;  
+  height: 50%;  
+}
+@media only screen and (max-width: 600px) {
+  .about-me {
+    position: relative; 
+    margin-top: -30%; 
+  }
+}
+.about-text{
+  margin-top: 10%; 
+  margin-left: 5%; 
+  margin-right: 5%;
+  color: white; 
+}
+.avatar{
+  border-radius:50%; 
+  width: 20%; 
+  height: auto; 
+}
 
+.home-container{
+  display: grid;
+  padding-bottom: 10%;
+}
+
+.clouds-projects{
+  overflow: hidden; 
+  position:relative; 
+}
+.project-container{
+  display: grid; 
+}
+.project-section{
+  position: absolute;  
+  text-align: center;
+  z-index: 2;
+  width: 100%;  
+  height: 50%;
+  
+}
+.white-back{
+  position: relative; 
+  width: 105%; 
+  height: auto; 
+}
+.orange-top{
+  position: relative; 
+  top: -20vh; 
+  left: -3%;
+  width: 40%; 
+  height: auto; 
+}
+
+.orange-bottom{
+  position: relative; 
+  width: 110%; 
+  left: -5%; 
+}
+
+.clouds-musings{
+  position: relative; 
+  overflow: hidden; 
+}
+
+.musings-text {
+  color: rgba(27, 20, 100, 1);
+  font-family: Quicksand; 
+  font-weight: bolder; 
+  font-size: 200%;
+  margin-top: 10%
+}
+.musings-text:hover {
+  color:rgba(27, 20, 100, 1);
+ 
+}
 
