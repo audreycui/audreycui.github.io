@@ -8,7 +8,12 @@
   }
 
   .sky-bg{
-    background : linear-gradient(0deg, rgb(236, 220, 170) 0%, rgb(216, 241, 245) 37.22%, rgb(160, 182, 215) 70.63%, rgb(123, 128, 190) 100%  );
+    background : linear-gradient(0deg, rgb(236, 220, 170) 0%, rgb(216, 241, 245) 37.22%, rgb(160, 182, 215) 70.63%, rgb(123, 128, 190) 100%  );  */
+    /* background: linear-gradient(0deg, rgb(200, 0, 0, ), rgb(0, 100, 100)) */
+  }
+
+  .test-bg{
+    background: red
   }
 
   .home-container{
