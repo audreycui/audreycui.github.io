@@ -1,0 +1,74 @@
+/* Style buttons */
+.btn {
+    border: none;
+    color:#231464; 
+    cursor: pointer;
+    font-family: Quicksand;
+    font-weight: bolder;
+  }
+
+  .sky-bg{
+    background : linear-gradient(0deg, rgb(236, 220, 170) 0%, rgb(216, 241, 245) 37.22%, rgb(160, 182, 215) 70.63%, rgb(123, 128, 190) 100%  );
+  }
+
+  .home-container{
+    position: relative; 
+  }
+
+  .portfolio-row{
+    z-index: 0; 
+    position: absolute
+  }
+
+  .clouds-home{
+    /* overflow: hidden;  */
+    position:absolute;
+    width:80%;
+    z-index: -1;
+    padding-bottom: 30% 
+  }
+
+  .purple-back{
+    margin-top: -10%; 
+    margin-left: 10%; 
+    width: 95%; 
+    height: auto; 
+  }
+  .purple-front{
+    position: absolute; 
+    top:30%;
+    width: 80%; 
+    height: auto; 
+    right: -10%
+  }
+.clouds-projects{
+  position:absolute; 
+  width: 100%;
+  z-index: -1;
+}
+
+.white-back{
+  position: relative; 
+  width: 50%; 
+  height: auto; 
+  margin-top: -5%; 
+  margin-left: 5%; 
+}
+
+.clouds-musings{
+  position: relative; 
+  overflow: hidden;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; 
+  width: 60%;
+}
+
+.pale-white{
+  background:rgb(255, 255, 255, 0.7)
+}

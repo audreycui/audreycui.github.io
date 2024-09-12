@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ecf59a1449.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <title>Audrey Cui</title>
+    <link rel="icon" href="img/headicon.png" type="image/x-icon">
+  </head>
+  <body class = "sky-bg">
+    
+    <!-- navigation bar-->
+    <nav class="navbar navbar-expand-md sticky-top navbar-fixed-top transparent navbar-style">
+    <a class="navbar-brand" href="#"><img src ="img/headicon.png" width="50" height="50" class="img-fluid" alt="Responsive image"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#art">Art </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#blog">Musings</a>
+        </li>
+        </ul>
+        
+    </div>
+    </nav>
+
+    <section id = 'home' class='home-container'>
+        <div class = 'clouds-home'>
+            <img src='cloud_imgs/purpleback.svg' class='purple-back'>
+            <img src='cloud_imgs/purplefront.svg' class='purple-front'>         
+        </div>
+        <div class = 'about-me'>
+            <img src='cloud_imgs/beyond_icon.jpg' class='avatar'>
+            <div class="nametext">Audrey Cui</div>
+            <div>
+                <a href="mailto:audcui@mit.edu" target="mail" class="skyblue">
+                    <i class="far fa-lg fa-envelope"> 
+                    </i>
+                </a>
+                </a>
+                <a href="https://www.linkedin.com/in/audrey-cui-1a220a173/" target="rb" class="skyblue">
+                    <i class="fab fa-lg fa-linkedin"></i>
+                </a>
+                <a href="http://www.github.com/audreycui" target="gh" class="skyblue">
+                    <i class="fa-lg fab fa-github"> 
+                    </i>
+                </a>
+                <a href="https://www.instagram.com/scribbleskibbles" target="ig" class="skyblue">
+                    <i class="fab fa-lg fa-instagram"></i>
+                </a>
+                </a>
+                <a href="https://www.redbubble.com/people/oddtreesea/explore?asc=u&page=1&sortOrder=recent" target="rb" class="skyblue">
+                    <i class="fas fa-store"></i>
+                </a>
+                <button class="btn" onclick="window.location.href='resumes/sep2020.pdf'"; type="button">
+                    <i class="far fa-file "></i> 
+                    Resume 
+                </button>
+            </div>
+            <div class="about-text">
+                <h2>
+                    Hello! I'm Audrey, a rising sophomore studying course 6-9 (Computer Science & Cognitive Science) at MIT. 
+                    As an aspiring researcher and avid artist, I'm interested in the ways computers can artistically augment and help us understand human creativity. 
+                    <br><br>
+                    As an undergraduate research assistant at MIT CSAIL, I'm working on generative adversarial network (GAN) inversion, feature representation, and controllability. 
+                    This summer, I'm also interning at Roche Pharmaceuticals, building graphical neural networks for cancer immunotherapy outcome & mechanism prediction. 
+                    <br> <br>
+                    In addition to fiddling with code and making art, I love petting my cat, playing social deduction games, spinning poi, and skateboarding! 
+                </h2>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section id = 'projects' class='home-container' style='font-family: Quicksand; font-weight: 800' >
+        <div class = 'clouds-projects'>
+            <img src = 'cloud_imgs/whiteback.svg' class = 'white-back'>
+
+            <!-- <img src='cloud_imgs/orangetop.svg' class ='orange-top'> -->
+        </div>
+        <div class='project-section'>
+            <div class='section-text'>
+                Projects
+            </div>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-4">
+                    <img style="width: 100%" src="img/paintbyword.png">
+                </div>
+                
+                <div class="col-6 left" >
+                    <h4 class='nametext2'>Paint By Word</h4>
+                    <p style="margin-left:5px; margin-right:10px; "> David Bau, Alex Andonian, <u>Audrey Cui</u>, YeonHwan Park, Ali Jahanian, Aude Oliva, Antonio Torralba
+                        <br>
+                    
+                        We investigated the problem of zero-shot semantic image painting — by using an image-text similarity network to guide the gradients of an image generation model, we "paint" selected regions to fit textual descriptions. 
+                        <br>
+                        Paper submitted to a 2021 computer vision conference. 
+                    </p>
+                    <p style="margin-left:5px; margin-right:5px; margin-top:20px"> 
+                        Built on Pytorch. 
+                    </p>
+                    <button class="btn" onclick="window.location.href='https://arxiv.org/abs/2103.10951'" type="button">
+                        <i class="fab fa-github"></i> code coming soon!</button>
+            
+                    <button class="btn" onclick="window.location.href='https://arxiv.org/abs/2103.10951'" type="button">
+                        <i class="far fa-file"></i> arxiv preprint </button>
+
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-4">
+                    <img style="width: 100%" src="img/results.JPG">
+                </div>
+                
+                <div class="col-6 left">
+                    <h4 class='nametext2'>From Pixel to Paragraph: A Neural Artwork Analysis Paragraph Generator
+                        (Jun 2018 - Feb 2020)</h4>
+                    
+                    <p style="margin-left:5px; margin-right:10px;"> Inspired by the subjectivity of art in my local art museum, I developed a 
+                        model that generates paragraphs analyzing input pieces of artwork.
+                        I modified <a href='https://arxiv.org/pdf/1709.08624.pdf'>LeakGAN</a> (an unconditional GAN) to condition on input artwork features so that it can learn image-text relationships. 
+                        To make this more user friendly, I used Unity to develop an augmented reality interface (currently just a proof of concept). 
+                    </p>
+                    
+                    <p style="margin-left:5px; margin-right:5px; margin-top:20px"> 
+                        Built with tensorflow, nltk, keras, numpy, BeautifulSoup, Unity, Microsoft Azure
+                    </p>
+                    <button class="btn" onclick="window.location.href='https://github.com/audreycui/pix2para'" type="button">
+                        <i class="fab fa-github"></i> GAN code </button>
+                    <button class="btn" onclick="window.location.href='https://github.com/audreycui/pix2paraUI'" type="button">
+                        <i class="fab fa-github"></i> AR code </button>
+                    <button class="btn" onclick="window.location.href='img/pix2para_paper.pdf'" type="button">
+                        <i class="far fa-file"></i> paper </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="art">
+        <div class = "container-fluid padding" >
+            <div class = "row welcome text-center">
+                <div class='col-12'>
+                    <h2 class='section-text'> Art</h2>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="artcontainer">
+                        <img src="img/mural/mural_big.JPG" class="artimage" id="mural">
+                        <div class="artmiddle">
+                            <div class="arttext">Mural (2020)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/sunsets/1.JPG" class="artimage" id="sunsets">
+                        <div class="artmiddle">
+                            <div class="arttext">sketchbook painting (2020)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/catlendar.jpg" class="artimage" id="catlendar">
+                        <div class="artmiddle">
+                            <div class="arttext">Catlendar (2019)</div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="column">
+                    
+                    
+                    <div class="artcontainer">
+                        <img src="img/shower.png" class="artimage" id="shower">
+                        <div class="artmiddle">
+                            <div class="arttext">Shower Triptych (2019)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/hyphen.JPG" class="artimage" id="hyphen">
+                        <div class="artmiddle">
+                            <div class="arttext">Hyphenated American (2018)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <!--
+                    <div class="artcontainer">
+                        <img src="img/sunsets2/2.jpg" class="artimage" id="sunsets2">
+                        <div class="artmiddle">
+                            <div class="arttext">Small Sunset (2019)</div>
+                        </div>
+                    </div>-->
+                    <div class="artcontainer">
+                        <img src="img/beyond.jpg" class="artimage" id="beyond">
+                        <div class="artmiddle">
+                            <div class="arttext">Beyond the Horizon (2018)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/sfheart.jpg" class="artimage" id="sfheart">
+                        <div class="artmiddle">
+                            <div class="arttext">Hearts in San Francisco (2019)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/explorercat.JPG" class="artimage" id="explorer">
+                        <div class="artmiddle">
+                            <div class="arttext">The Explorer and Her Cat (2018)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/goodevil.png" class="artimage" id="hands">
+                        <div class="artmiddle">
+                            <div class="arttext">Nature with a Capital N (2018)</div>
+                        </div>
+                    </div>
+                  </div>
+                <div class="column">
+                    <div class="artcontainer">
+                        <img src="img/chambers.png" class="artimage" id="chambers">
+                        <div class="artmiddle">
+                            <div class="arttext">Chambers (2019)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/bloodyhands.jpg" class="artimage" id="bloody">
+                        <div class="artmiddle">
+                            <div class="arttext">Thumbs Up (2019)</div>
+                        </div>
+                    </div>
+                    <div class="artcontainer">
+                        <img src="img/shrimp.JPG" class="artimage" id="shrimp">
+                        <div class="artmiddle">
+                            <div class="arttext">Her Heart Beats to the Crunch of Shrimp Chips (2020)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modalImage" id="img01">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id='musings' class='home-container'>
+        <div class = 'clouds-musings'>
+            <img src = 'cloud_imgs/orange_bottom.svg' class = 'orange-bottom'>
+        </div>
+        <div class = "project-section ">
+            <h2 class='section-text musings-title'> Musings </h2>
+            <div class='musings-text'>
+                <li><a href='https://mindhandheart.mit.edu/blog/bad-puns-good-times-big-dijkstra-energy' >2/17/21: Good Times and Bad Puns — Big Dijkstra Energy</a></li>
+                <!-- <li><a href="kdrama-blog.html" class='nametext2'>12/22/20: My Takes on Startup the Kdrama</a></li> -->
+                <li><a href="blog3.html" >12/13/20: My 2D Existence - A Zoom Zine</a></li>
+                <li><a href = 'https://mitadmissions.org/blogs/entry/guest-post-mit-think-scholars-a-high-school-research-program/' '>10/31/20: MIT Admissions Blog Guest Post!</a></li>
+                <!-- <li><a href="blog2.html" class='nametext2'>10/5/20: Ramblings From a Month In </a></li> -->
+    
+            </div>
+                    </div>
+    </section>
+  
+
+    <!--art-->
+    
+        
+    <footer>
+        <div class="text-center">
+            <p style="text-align:center"> copyright &copy; Audrey Cui 2021</p>
+            <p style="text-align:center">&#10022; cloudscape background by me! &#10022;</p>
+            <a href="mailto:audcui@mit.edu" target="mail" class="skyblue">
+                <i class="far fa-lg fa-envelope"> 
+                </i>
+            </a>
+            </a>
+            <a href="https://www.linkedin.com/in/audrey-cui-1a220a173/" target="rb" class="skyblue">
+                <i class="fab fa-lg fa-linkedin"></i>
+            </a>
+            <a href="http://www.github.com/audreycui" target="gh" class="skyblue">
+                <i class="fa-lg fab fa-github"> 
+                </i>
+            </a>
+            <a href="https://www.instagram.com/scribbleskibbles" target="ig" class="skyblue">
+                <i class="fab fa-lg fa-instagram"></i>
+            </a>
+            </a>
+            <a href="https://www.redbubble.com/people/oddtreesea/explore?asc=u&page=1&sortOrder=recent" target="rb" class="skyblue">
+                <i class="fas fa-store"></i>
+            </a>
+
+            <!-- Auto width -->
+            <button class="btn" onclick="window.location.href='resumes/sep2020.pdf'"; type="button">
+                <i class="far fa-file"></i> Resume </button>
+        </div>
+        
+    </footer>
+    <!-- modal image script-->
+    <script>
+        var modalEle = document.querySelector(".modal");
+        var modalImage = document.querySelector(".modalImage");
+        Array.from(document.querySelectorAll(".artimage")).forEach(item => {
+           item.addEventListener("click", event => {
+              modalEle.style.display = "block";
+              modalImage.src = event.target.src;
+            });
+        });
+        document.querySelector(".modal").addEventListener("click", () => {
+           modalEle.style.display = "none";
+        });
+
+
+    </script>
+    <!-- bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,347 +1,418 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Audrey Cui</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/ecf59a1449.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 
-    <!-- bootstrap css-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/ecf59a1449.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <title>Audrey Cui</title>
-    <link rel="icon" href="img/headicon.png" type="image/x-icon">
-  </head>
-  <body class = "sky-bg">
-    
-    <!-- navigation bar-->
-    <nav class="navbar navbar-expand-md sticky-top navbar-fixed-top transparent navbar-style">
-    <a class="navbar-brand" href="#"><img src ="img/headicon.png" width="50" height="50" class="img-fluid" alt="Responsive image"> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content sky-bg" style="max-width:1600px">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        
-        <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#art">Art </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#blog">Musings</a>
-        </li>
-        </ul>
-        
-    </div>
-    </nav>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse pale-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/img/headicon.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Audrey Cui</b></h4>
+    <p class="w3-text-grey">grad researcher, maker, & artist</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#writing" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-solid fa-quote-left fa-fw w3-margin-right"></i>WRITING</a> 
 
-    <section id = 'home' class='home-container'>
-        <div class = 'clouds-home'>
-            <img src='cloud_imgs/purpleback.svg' class='purple-back'>
-            <img src='cloud_imgs/purplefront.svg' class='purple-front'>         
-        </div>
-        <div class = 'about-me'>
-            <img src='cloud_imgs/beyond_icon.jpg' class='avatar'>
-            <div class="nametext">Audrey Cui</div>
-            <div>
-                <a href="mailto:audcui@mit.edu" target="mail" class="skyblue">
-                    <i class="far fa-lg fa-envelope"> 
-                    </i>
-                </a>
-                </a>
-                <a href="https://www.linkedin.com/in/audrey-cui-1a220a173/" target="rb" class="skyblue">
-                    <i class="fab fa-lg fa-linkedin"></i>
-                </a>
-                <a href="http://www.github.com/audreycui" target="gh" class="skyblue">
-                    <i class="fa-lg fab fa-github"> 
-                    </i>
-                </a>
-                <a href="https://www.instagram.com/scribbleskibbles" target="ig" class="skyblue">
-                    <i class="fab fa-lg fa-instagram"></i>
-                </a>
-                </a>
-                <a href="https://www.redbubble.com/people/oddtreesea/explore?asc=u&page=1&sortOrder=recent" target="rb" class="skyblue">
-                    <i class="fas fa-store"></i>
-                </a>
-                <button class="btn" onclick="window.location.href='resumes/sep2020.pdf'"; type="button">
-                    <i class="far fa-file "></i> 
-                    Resume 
-                </button>
-            </div>
-            <div class="about-text">
-                <h2>
-                    Hello! I'm Audrey, a rising sophomore studying course 6-9 (Computer Science & Cognitive Science) at MIT. 
-                    As an aspiring researcher and avid artist, I'm interested in the ways computers can artistically augment and help us understand human creativity. 
-                    <br><br>
-                    As an undergraduate research assistant at MIT CSAIL, I'm working on generative adversarial network (GAN) inversion, feature representation, and controllability. 
-                    This summer, I'm also interning at Roche Pharmaceuticals, building graphical neural networks for cancer immunotherapy outcome & mechanism prediction. 
-                    <br> <br>
-                    In addition to fiddling with code and making art, I love petting my cat, playing social deduction games, spinning poi, and skateboarding! 
-                </h2>
-                
-            </div>
-        </div>
-    </section>
-    
-    <section id = 'projects' class='home-container' style='font-family: Quicksand; font-weight: 800' >
-        <div class = 'clouds-projects'>
-            <img src = 'cloud_imgs/whiteback.svg' class = 'white-back'>
-
-            <!-- <img src='cloud_imgs/orangetop.svg' class ='orange-top'> -->
-        </div>
-        <div class='project-section'>
-            <div class='section-text'>
-                Projects
-            </div>
-            <div class="row">
-                <div class="col-1">
-                </div>
-                <div class="col-4">
-                    <img style="width: 100%" src="img/paintbyword.png">
-                </div>
-                
-                <div class="col-6 left" >
-                    <h4 class='nametext2'>Paint By Word</h4>
-                    <p style="margin-left:5px; margin-right:10px; "> David Bau, Alex Andonian, <u>Audrey Cui</u>, YeonHwan Park, Ali Jahanian, Aude Oliva, Antonio Torralba
-                        <br>
-                    
-                        We investigated the problem of zero-shot semantic image painting — by using an image-text similarity network to guide the gradients of an image generation model, we "paint" selected regions to fit textual descriptions. 
-                        <br>
-                        Paper submitted to a 2021 computer vision conference. 
-                    </p>
-                    <p style="margin-left:5px; margin-right:5px; margin-top:20px"> 
-                        Built on Pytorch. 
-                    </p>
-                    <button class="btn" onclick="window.location.href='https://arxiv.org/abs/2103.10951'" type="button">
-                        <i class="fab fa-github"></i> code coming soon!</button>
-            
-                    <button class="btn" onclick="window.location.href='https://arxiv.org/abs/2103.10951'" type="button">
-                        <i class="far fa-file"></i> arxiv preprint </button>
-
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class="col-1">
-                </div>
-                <div class="col-4">
-                    <img style="width: 100%" src="img/results.JPG">
-                </div>
-                
-                <div class="col-6 left">
-                    <h4 class='nametext2'>From Pixel to Paragraph: A Neural Artwork Analysis Paragraph Generator
-                        (Jun 2018 - Feb 2020)</h4>
-                    
-                    <p style="margin-left:5px; margin-right:10px;"> Inspired by the subjectivity of art in my local art museum, I developed a 
-                        model that generates paragraphs analyzing input pieces of artwork.
-                        I modified <a href='https://arxiv.org/pdf/1709.08624.pdf'>LeakGAN</a> (an unconditional GAN) to condition on input artwork features so that it can learn image-text relationships. 
-                        To make this more user friendly, I used Unity to develop an augmented reality interface (currently just a proof of concept). 
-                    </p>
-                    
-                    <p style="margin-left:5px; margin-right:5px; margin-top:20px"> 
-                        Built with tensorflow, nltk, keras, numpy, BeautifulSoup, Unity, Microsoft Azure
-                    </p>
-                    <button class="btn" onclick="window.location.href='https://github.com/audreycui/pix2para'" type="button">
-                        <i class="fab fa-github"></i> GAN code </button>
-                    <button class="btn" onclick="window.location.href='https://github.com/audreycui/pix2paraUI'" type="button">
-                        <i class="fab fa-github"></i> AR code </button>
-                    <button class="btn" onclick="window.location.href='img/pix2para_paper.pdf'" type="button">
-                        <i class="far fa-file"></i> paper </button>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="art">
-        <div class = "container-fluid padding" >
-            <div class = "row welcome text-center">
-                <div class='col-12'>
-                    <h2 class='section-text'> Art</h2>
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="artcontainer">
-                        <img src="img/mural/mural_big.JPG" class="artimage" id="mural">
-                        <div class="artmiddle">
-                            <div class="arttext">Mural (2020)</div>
-                        </div>
-                    </div>
-                    <div class="artcontainer">
-                        <img src="img/sunsets/1.JPG" class="artimage" id="sunsets">
-                        <div class="artmiddle">
-                            <div class="arttext">sketchbook painting (2020)</div>
-                        </div>
-                    </div>
-                    <div class="artcontainer">
-                        <img src="img/catlendar.jpg" class="artimage" id="catlendar">
-                        <div class="artmiddle">
-                            <div class="arttext">Catlendar (2019)</div>
-                        </div>
-                    </div>
-                  
-                </div>
-                <div class="column">
-                    
-                    
-                    <div class="artcontainer">
-                        <img src="img/shower.png" class="artimage" id="shower">
-                        <div class="artmiddle">
-                            <div class="arttext">Shower Triptych (2019)</div>
-                        </div>
-                    </div>
-                    <div class="artcontainer">
-                        <img src="img/hyphen.JPG" class="artimage" id="hyphen">
-                        <div class="artmiddle">
-                            <div class="arttext">Hyphenated American (2018)</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column">
-                    <!--
-                    <div class="artcontainer">
-                        <img src="img/sunsets2/2.jpg" class="artimage" id="sunsets2">
-                        <div class="artmiddle">
-                            <div class="arttext">Small Sunset (2019)</div>
-                        </div>
-                    </div>-->
-                    <div class="artcontainer">
-                        <img src="img/beyond.jpg" class="artimage" id="beyond">
-                        <div class="artmiddle">
-                            <div class="arttext">Beyond the Horizon (2018)</div>
-                        </div>
-                    </div>
-                    <div class="artcontainer">
-                        <img src="img/sfheart.jpg" class="artimage" id="sfheart">
-                        <div class="artmiddle">
-                            <div class="arttext">Hearts in San Francisco (2019)</div>
-                        </div>
-                    </div>
-                    <div class="artcontainer">
-                        <img src="img/explorercat.JPG" class="artimage" id="explorer">
-                        <div class="artmiddle">
-                            <div class="arttext">The Explorer and Her Cat (2018)</div>
-                        </div>
-                    </div>
-                    <div class="artcontainer">
-                        <img src="img/goodevil.png" class="artimage" id="hands">
-                        <div class="artmiddle">
-                            <div class="arttext">Nature with a Capital N (2018)</div>
-                        </div>
-                    </div>
-                  </div>
-                <div class="column">
-                    <div class="artcontainer">
-                        <img src="img/chambers.png" class="artimage" id="chambers">
-                        <div class="artmiddle">
-                            <div class="arttext">Chambers (2019)</div>
-                        </div>
-                    </div>
-                    <div class="artcontainer">
-                        <img src="img/bloodyhands.jpg" class="artimage" id="bloody">
-                        <div class="artmiddle">
-                            <div class="arttext">Thumbs Up (2019)</div>
-                        </div>
-                    </div>
-                    <div class="artcontainer">
-                        <img src="img/shrimp.JPG" class="artimage" id="shrimp">
-                        <div class="artmiddle">
-                            <div class="arttext">Her Heart Beats to the Crunch of Shrimp Chips (2020)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modalImage" id="img01">
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    
-    <section id='musings' class='home-container'>
-        <div class = 'clouds-musings'>
-            <img src = 'cloud_imgs/orange_bottom.svg' class = 'orange-bottom'>
-        </div>
-        <div class = "project-section ">
-            <h2 class='section-text musings-title'> Musings </h2>
-            <div class='musings-text'>
-                <li><a href='https://mindhandheart.mit.edu/blog/bad-puns-good-times-big-dijkstra-energy' >2/17/21: Good Times and Bad Puns — Big Dijkstra Energy</a></li>
-                <!-- <li><a href="kdrama-blog.html" class='nametext2'>12/22/20: My Takes on Startup the Kdrama</a></li> -->
-                <li><a href="blog3.html" >12/13/20: My 2D Existence - A Zoom Zine</a></li>
-                <li><a href = 'https://mitadmissions.org/blogs/entry/guest-post-mit-think-scholars-a-high-school-research-program/' '>10/31/20: MIT Admissions Blog Guest Post!</a></li>
-                <!-- <li><a href="blog2.html" class='nametext2'>10/5/20: Ramblings From a Month In </a></li> -->
-    
-            </div>
-                    </div>
-    </section>
+  </div>
   
+  </div>
+</nav>
 
-    <!--art-->
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main " style="margin-left:300px" >
+  <div class="w3-container">
+    <div class = 'clouds-home'>
+      <img src='cloud_imgs/purpleback.svg' class='purple-back'>
+      <img src='cloud_imgs/purplefront.svg' class='purple-front'>         
+    </div>
+  </div>
+  <div class="w3-container w3-padding-large" id="about" style="margin-bottom:32px">
+    <hr>
+    <h2><b>About Me</b></h2>
     
+    <p></p>
+    <hr>
+    <div class="w3-col m6">
+      <img src="/img/picme.JPG" alt="Me" class="center">
+    </div>
+    <br>
+    <div class="w3-col m6 ">
+      <p><b>Hi! I'm a grad student at MIT studying mechanical engineering, advised by Prof. Loza Tadesse. My current research interests include using optics and controls to build portable diagnostic devices, and I love working across the entire spectrum of CS/EE/MechE to build multidisciplinary systems. Outside of lab, I'm often teaching and tinkering in MIT's makerspaces. I'm also a huge proponent of touching grass. Any chance I get I try to go outside and run, hike, bike, swim, and spin fire poi!</b></p>
+      <br>
+      <h3>Education</h3>
+      <p><i>Massachusetts Institute of Technology</i></p>
+      <p><b>MS in Mechanical Engineering: expected May 2025</b></p>
+      <p>BS in Computer Science & Cognitive Science: May 2024</p>
+
+      <button class="btn" onclick="window.location.href='resumes/sep2024.pdf'" type="button">
+        <i class="far fa-file"></i> Resume </button>
+      <button class="btn" onclick="window.location.href='https://www.linkedin.com/in/audrey-cui-1a220a173/'" type="button">
+        <i class="fa fa-linkedin"></i> Linkedin </button>
+    </div>
+    
+  
+  </div>
+
+  <!-- Header -->
+  <header id="portfolio">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+      <hr>
+    <h2><b>Portfolio</b></h2>
+    <p></p>
+    <hr>
+    <!-- <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Mechanical</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Electronics</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Machine Learning</button>
+
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div> -->
+    </div>
+  </header>
+
+  
+  <!-- <div class = 'clouds-home'>
+    <img src='cloud_imgs/purpleback.svg' class='purple-back'>
+  </div> -->
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding ">
+    
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/img/raman.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>Building an Automated System for High Throughput Diagnostics (2023 -)</b></p>
+        <p>Tadesse Lab project in progress</p>
+        <p>Currently building out the hardware and mechanical modules for a high throughput platform with modularity, cost, and accessibility in mind. 
+          My work has included PCB board design, writing custom firmware, and implementing serial communication across several submodules for system integration. 
+        </p>
+        <p>Built with Kicad, Marlin, Arduino, Raspberry Pi, Fusion360 CAD</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <!-- <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"> -->
+      <div class="w3-container pale-white">
+        <p><b>Mechanical, Optical, & Electronic Puzzle Cube (2024)</b></p>
+        I made a puzzle cube for my wonderful electronics lab instructor who is also a professional trumpet player. Puzzles involve a flex PCB capacitive trumpet and beamsplitter alignment with a butterfly flexure. 
+        <p>Built with Kicad, Fusion360 CAD</p>
+      
         
-    <footer>
-        <div class="text-center">
-            <p style="text-align:center"> copyright &copy; Audrey Cui 2021</p>
-            <p style="text-align:center">&#10022; cloudscape background by me! &#10022;</p>
-            <a href="mailto:audcui@mit.edu" target="mail" class="skyblue">
-                <i class="far fa-lg fa-envelope"> 
-                </i>
-            </a>
-            </a>
-            <a href="https://www.linkedin.com/in/audrey-cui-1a220a173/" target="rb" class="skyblue">
-                <i class="fab fa-lg fa-linkedin"></i>
-            </a>
-            <a href="http://www.github.com/audreycui" target="gh" class="skyblue">
-                <i class="fa-lg fab fa-github"> 
-                </i>
-            </a>
-            <a href="https://www.instagram.com/scribbleskibbles" target="ig" class="skyblue">
-                <i class="fab fa-lg fa-instagram"></i>
-            </a>
-            </a>
-            <a href="https://www.redbubble.com/people/oddtreesea/explore?asc=u&page=1&sortOrder=recent" target="rb" class="skyblue">
-                <i class="fas fa-store"></i>
-            </a>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/img/stamp.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>Engraved Brass Stamp (2024)</b></p>
+        <p>I made a wax seal brass stamp as a gift! The handle and body was machined on a lathe and joined with a press fit, and the design was engraved on a PCB mill.</p>
+        <p>Built with Fusion360 CAD/CAM</p>
+      </div>
+    </div>
+  </div>
+  <p> </p>
 
-            <!-- Auto width -->
-            <button class="btn" onclick="window.location.href='resumes/sep2020.pdf'"; type="button">
-                <i class="far fa-file"></i> Resume </button>
-        </div>
-        
-    </footer>
-    <!-- modal image script-->
-    <script>
-        var modalEle = document.querySelector(".modal");
-        var modalImage = document.querySelector(".modalImage");
-        Array.from(document.querySelectorAll(".artimage")).forEach(item => {
-           item.addEventListener("click", event => {
-              modalEle.style.display = "block";
-              modalImage.src = event.target.src;
-            });
-        });
-        document.querySelector(".modal").addEventListener("click", () => {
-           modalEle.style.display = "none";
-        });
+  <!-- second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/img/ledpcb.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>Persistence of Vision LED Poi PCB (2023 -)</b></p>
+        <p>Work in progress!</p>
+        <p>Inspired by <a href='https://www.lighttoys.cz/product/visual-poi-v5-classic/'>Pyroterra Visual Poi,</a> I am making my own low cost version. Features include an ESP32 microcontroller, rechargeable battery circuit, power negotiation between the battery and USB-C port, TL5947 shift register LED drivers, and daisy chained LED boards for extending prop length.</p>
+        <p>Built with Kicad</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/img/underactuated final video.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>Trajectory Optimization of a Squirrel’s Righting
+            Reflex (2023)</b></p>
+        <p> 6.8210 Underactuated Robotics Final Project</p>
+        <p> Inspired by Mark Rober's squirrel launching platform, I modeled the righting reflex of a squirring traveling along a ballistic trajectory 
+          using direct collocation trajectory optimization. Using my model, I examine the role of the squirrel's legs and tail and plausibility of the squirrel 
+          completing multiple flips. 
+        </p>
+        <p>Built with Drake</p>
+        <button class="btn" onclick="window.location.href='https://www.youtube.com/watch?v=7xyfPmGN0nw'" type="button">
+            <i class="fas fa-play-circle"></i> video</button>
+        <button class="btn" onclick="window.location.href='https://drive.google.com/file/d/1q3JL-VQKW3seGs1E_KIuoGuhrKpAH5Z6/view?usp=drive_link'" type="button">
+            <i class="far fa-file"></i> paper </button>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/img/doodlejump.webp" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>Mechanical Doodle Jump (2023)</b></p>
+        <p>6.2050 Microcomputer Laboratory Final Project</p>
+        <p>A mechanical version of the platform jumping game Doodle Jump! The player controls the jumping dot's horizontal movement with repurposed pens, and 
+          a repurposed printer gear drive rotates the LED cube such that the player dot is always facing you. The PSoC 5 microcontroller, which we were required to use,
+          did not have any prewritten WS2812b LED driver libraries, so I wrote my own using the PSoC's PWM generator. 
+        </p>
+        <button class="btn" onclick="window.location.href='https://www.youtube.com/watch?v=hwRL_PzuH4Q'" type="button">
+          <i class="fas fa-play-circle"></i> video</button>
+        <button class="btn" onclick="window.location.href='https://mitadmissions.org/blogs/entry/6-115-microcomputer-lab/'" type="button">
+          <i class="far fa-file"></i> blog </button>
+      </div>
+    </div>
+  </div>
+  
+  <p> </p>
+
+  <!-- third Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/img/relighting.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>Local Relighting of Real Scenes (2022)</b></p>
+        <p><u>Audrey Cui</u>, Ali Jahanian, Agata Lapedriza, Antonio Torralba, Shahin Mahdizadehaghdam, Rohit Kumar, David Bau</p>
+        <p>We introduce the task of local relighting, which changes a photograph of a scene by switching on and off the light sources that are visible within the image. We propose an approach for local relighting that trains a model without supervision of any novel image dataset by using synthetically generated image pairs from another model. </p>
+        <p>Built with Pytorch</p>
+        <button class="btn" onclick="window.location.href='https://github.com/audreycui/relighting'" type="button">
+            <i class="fab fa-github"></i> code</button>
+
+        <button class="btn" onclick="window.location.href='https://arxiv.org/abs/2207.02774'" type="button">
+            <i class="far fa-file"></i> arxiv preprint </button>
+    </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/img/paintbyword.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>Paint by Word (2021)</b></p>
+        <p> Alex Andonian, Sabrina Osmany, <u>Audrey Cui</u>, YeonHwan Park, Ali Jahanian, Aude Oliva, Antonio Torralba, David Bau</p>
+        <p>We investigated the problem of zero-shot semantic image painting — by using an image-text similarity network to guide the gradients of an image generation model, we "paint" selected regions to fit textual descriptions. </p>
+        <p>Built with Pytorch</p>
+        <button class="btn" onclick="window.location.href='https://github.com/alexandonian/paint-by-word'" type="button">
+            <i class="fab fa-github"></i> code</button>
+
+        <button class="btn" onclick="window.location.href='https://arxiv.org/abs/2103.10951'" type="button">
+            <i class="far fa-file"></i> arxiv preprint </button>
+
+    </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/img/results.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>From Pixel to Paragraph: A Neural Artwork Analysis Paragraph Generator (2018 - 2020)</b></p>
+        <p>Inspired by the subjectivity of art in my local art museum, I developed a model that generates paragraphs analyzing input pieces of artwork. I modified <a href='https://arxiv.org/pdf/1709.08624.pdf'>LeakGAN</a> (an unconditional GAN) to condition on input artwork features so that it can learn image-text relationships. To make this more user friendly, I developed an augmented reality interface on Unity.</p>
+        <p>Built with tensorflow, nltk, keras, numpy, BeautifulSoup, Unity, Microsoft Azure</p>
+        <button class="btn" onclick="window.location.href='https://github.com/audreycui/pix2para'" type="button">
+            <i class="fab fa-github"></i> GAN code </button>
+        <button class="btn" onclick="window.location.href='https://github.com/audreycui/pix2paraUI'" type="button">
+            <i class="fab fa-github"></i> AR code </button>
+        <button class="btn" onclick="window.location.href='img/pix2para_paper.pdf'" type="button">
+            <i class="far fa-file"></i> paper </button>
+    </div>
+    </div>
+  </div>
+
+  <p> </p>
+
+  <!-- fourth Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/img/sewing.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>Sewing</b></p>
+        <p>I enjoy making gowns, corsets, and capes from scratch! Making my own clothing is empowering as a practice of slow fashion. Typically I find a pattern that's generally 
+          in the cut that I'm going for, and then modify them into my desired silhouette. 
+        </p>
+        <p>(left to right): layered organza dress for learning how to sew sheer fabrics, gown for exploring pleating & gathering, corset + bolero, butterfly cape with soutache inspired bias tape designs</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/img/WELDING.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>Welding</b></p>
+        <p>I run weekly welding trainings as a makerspace mentor and am always trying to improve my own technique across MIG/TIG on steel and aluminum.</p>
+        <p>Left: scrap aluminum stand for a >100lb grill </p>
+        <p>Right: steel fire fan frame</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/img/piday.PNG" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container pale-white">
+        <p><b>2D Animation</b></p>
+        <p>I animated the 2021 & 2022 MIT Pi Day announcement videos frame by frame with a small team of student animators/producers!</p>
+        <p>Built with Procreate</p>
+        <button class="btn" onclick="window.location.href='https://www.youtube.com/watch?v=YPV9yp1XEfQ'" type="button">
+          <i class="fas fa-play-circle"></i> 2022: Into the MIT-verse </button>
+          <button class="btn" onclick="window.location.href='https://www.youtube.com/watch?v=x0cWrzoXLXc'" type="button">
+            <i class="fas fa-play-circle"></i> 2021: Tim's Moving Campus</button>
+      </div>
+    </div>
+  </div>
 
 
-    </script>
-    <!-- bootstrap JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div> -->
+
+  <!-- Images of Me -->
+  <!-- <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
+    </div>
+  </div> -->
+
+  <div class="w3-container">
+    <div class = 'clouds-projects'>
+      <img src = 'cloud_imgs/whiteback.svg' class = 'white-back'>
+    </div>
+  </div>
+  
+  
+  <!-- <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email@email.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Chicago, US</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  -->
+
+  <div class="w3-container w3-padding-large" id="writing" style="margin-bottom:32px">
+    <hr>
+    <h2><b>Writing</b></h2>
+    
+    <p></p>
+    <hr>
+    
+    <br>
+    <div class="w3-col">
+      <p>I used to write for the <a href="https://mitadmissions.org/blogs/author/audcui/">MIT Admissions blogs</a>. I essentially have a time capsule of my undergraduate experience immortalized on the Internet, encompassing wholesome and challenging moments alike. Here are some of my favorites: </p>
+      <br>
+      <p>&#9752; <a href="https://mitadmissions.org/blogs/entry/its-getting-colder-and-im-getting-older/">it's getting colder and i'm getting older</a> (on fall, friendship, and growing up - Nov 2023)</p>
+      <p>&#9752; <a href="https://mitadmissions.org/blogs/entry/city-strangers/">City Strangers</a> (a comic - Jun 2022)</p>
+      <p>&#9752; <a href="https://mitadmissions.org/blogs/entry/sea-glass/">sea glass</a> (turbulent waves in these parts - Feb 2022)</p>
+      <p>&#9752; <a href="https://mitadmissions.org/blogs/entry/things-that-are-golden/">things that are golden</a> (a zine - Dec 2021)</p>
+      <p>&#9752; <a href="https://mitadmissions.org/blogs/entry/learning-about-things/">learning about Things!!</a> (cool classes explained in easy words - Jan 2024) </p>
+      <p>&#9752; <a href="https://mitadmissions.org/blogs/entry/drawing-from-life/">Drawing from Life</a> (is that the boldest stroke you can make? - Jun 2023)</p>
+      <p>&#9752; <a href="https://mitadmissions.org/blogs/entry/this-blogger-does-not-exist/">this blogger does not exist</a> (join me in the uncanny valley - Jan 2022)</p>
+    </div>
+    
+  
+  </div>
+
+  <div class="w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>
